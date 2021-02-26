@@ -5,7 +5,6 @@ import mx.com.softgame.poo1game.personajes.Personaje;
 
 public class PruebaPersonaje {
   public static void main(String[] args) {
-    Personaje p1 = new Personaje("Omar");
     Personaje p2 = new Personaje("Erick");
     Personaje p3 = new Personaje("Wendy");
     Personaje p4 = new Personaje("Lesly");

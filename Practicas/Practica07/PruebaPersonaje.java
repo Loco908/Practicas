@@ -41,6 +41,7 @@ public class PruebaPersonaje {
         }
       }while(!p4.setEdad(ed));
       System.out.println(p4.getDetalle()+"\n");
+      System.out.println("Perro feo")
     }
   }  
 } 

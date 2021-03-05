@@ -6,6 +6,11 @@ public class Personaje{
 
     public Personaje (String nombre){
         this.nombre = nombre;
+        vida = 0;
+    }
+    public Personaje (String nombre, int vida){
+        this.nombre = nombre;
+        vida = 3;
     }
     
     public void setNombre( String nombre){
@@ -39,5 +44,12 @@ public class Personaje{
         detalle = nombre + "\t" + edad;
         return detalle;
 
+    }
+
+    public void decVida() {
+        vida ++;
+    }
+    public void decVida(int) {
+        vida --;
     }
 }

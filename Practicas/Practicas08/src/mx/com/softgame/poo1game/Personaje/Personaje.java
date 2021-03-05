@@ -46,9 +46,10 @@ public class Personaje{
     }
 
     public void decVida() {
-        decvida(1);
+       vida ++;
     }
     public void decVida(int restaVida) {
-        
+        vida --;
+
     }
 }

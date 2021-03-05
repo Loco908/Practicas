@@ -10,5 +10,14 @@ public class Zombie extends Personaje {
     public Zombie(String nombre, boolean ataque){
         this(nombre, 3, ataque);
     }
-    public
+    public Zombie(String nombre){
+        this(nombre, 4, false);
+    }
+    public boolean getAtaque(){
+        return ataque;
+    }
+    public String getDetalle(){
+        return (nombre+"\t"+vida+"\t"+ ataque);
+    }
+    
 }

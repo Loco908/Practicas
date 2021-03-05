@@ -40,16 +40,16 @@ public class Personaje{
 
     public String getDetalle(){
         String detalle = "";
-        detalle = nombre + "\t" + edad;
+        detalle = nombre + "\t" + vida;
         return detalle;
 
     }
 
     public void decVida() {
-       vida ++;
+        vida++;
     }
-    public void decVida(int restaVida) {
-        vida --;
+    public void decVida(int restaVida){
+        vida--;
+    }
 
-    }
 }

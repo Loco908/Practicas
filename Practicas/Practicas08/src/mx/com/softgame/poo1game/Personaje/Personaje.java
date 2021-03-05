@@ -49,8 +49,6 @@ public class Personaje{
         decvida(1);
     }
     public void decVida(int restaVida) {
-        if((vida - restaVida)>0){
-            vida = vida - restaVida;
-        }
+        
     }
 }

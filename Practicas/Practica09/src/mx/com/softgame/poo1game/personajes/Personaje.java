@@ -7,7 +7,11 @@ public class Personaje{
     public Personaje(String nombre, int vida){
         super();
         this.nombre = nombre;
-        this.vida = vida;    
+        this.vida = vida;
+    }
+    public Personaje(String nombre){
+        this.nombre = nombre;
+        vida = 3;
     }
     
     public void decVida(){

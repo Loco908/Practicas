@@ -23,7 +23,7 @@ public class PruebaHerencia{
                 if(p==personajes[i]){
                     System.out.println("**"+p.toString()+" " + "es identico a"+ " "+personajes[i].toString()+" "+"diferentes objetos"+"**" );
                 }else{
-                    System.out.println("No son iguales");
+                    System.out.println("No");
                 }
             }
         }

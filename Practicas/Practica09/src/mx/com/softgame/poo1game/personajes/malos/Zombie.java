@@ -37,7 +37,7 @@ public class Zombie extends Personaje{
     }
     public boolean equals(Object obj){
         boolean resultado = false;
-        if((obj != null) && (obj instanceof Planta)){
+        if((obj != null) && (obj instanceof Zombie)){
             Zombie u = (Zombie)obj;
             if (ataque == u.ataque){
                 resultado = true;

@@ -32,5 +32,18 @@ public class Zombie extends Personaje{
         }
         
     }
+    public String toString(){
+        return super.toString()+" \t "+ataque;
+    }
+    public boolean equals(Object obj){
+        boolean resultado = false;
+        if((obj != null) && (obj instanceof Planta)){
+            Zombie u = (Zombie)obj;
+            if (ataque == u.ataque){
+                resultado = true;
+            }
+        }
+        return resultado;
+    }
 
 }

@@ -34,9 +34,16 @@ public class Planta extends Personaje{
     public String toString(){
         return super.toString()+escudo;
     }
-    public boolean super.equals(Object obj){
-        if(escudo == other.escudo) {
-            return false;
+    public boolean equals(Object obj){
+        //if(escudo == other.escudo) {
+        if( obj instanceof Personaje){
+            Personaje tmpPersonaje = (Personaje)obj;
+            if(this.escudo.equals(tmpPersonaje) && this.escudo.equals(tmpPersonaje.escudo)){
+                return false;
+            }
+            else{
+                return true;
+            }
         }
         return false;
     }

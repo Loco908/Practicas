@@ -40,8 +40,8 @@ public class Personaje{
     public String toString(){
         return nombre+"\t"+vida; 
     }
-    public boolean equals2( Object obj) {
-        Personaje p = (Personaje)obj;
+    public boolean equals(Object obj){
+        Personaje p = new Personaje(obj);
         final Personaje other = (Personaje)obj;
         if(vida == other.vida) {
             return false;
@@ -49,9 +49,7 @@ public class Personaje{
         if(nombre == other.nombre){
             return false;
         }
-        if(nombre == other.nombre){
-            return false;
-        }
         return false;
+
     }
 }

@@ -5,7 +5,6 @@ public class Personaje{
     protected int vida;
 
     public Personaje(String nombre, int vida){
-        super();
         this.nombre = nombre;
         this.vida = vida;
     }
@@ -50,6 +49,8 @@ public class Personaje{
             Personaje u = (Personaje)obj;
             if ((nombre == u.nombre) && (vida == u.vida)){
                 resultado = true;
+            }else{
+                resultado = false;
             }
         }
         return resultado;

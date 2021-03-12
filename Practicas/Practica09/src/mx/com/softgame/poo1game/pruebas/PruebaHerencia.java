@@ -13,24 +13,24 @@ public class PruebaHerencia{
         new Personaje("Omar",99),
         new Planta("Karen",50),
         new Zombie("Hanna",80,false)
+
+        int i = 0;
+        while (i<personajes.length) {
+            for(Personaje p : personajes){
+                if(p.equals(personajes[i])){
+                    System.out.println("***"+p.toString()+"es identico"+" "+personajes[i].toString()+" "+"mismos objetos"+"***");
+                }
+                if(p==personajes[i]){
+                    System.out.println("**"+p.toString()+" " + "es identico a"+ " "+personajes[i].toString()+" "+"diferentes objetos"+"**" );
+                }else{
+                    System.out.println("No son iguales");
+                }
+            }
+        }
+
+
     };
   
-        for (Personaje j: personajes){
-            System.out.println(j.getDetalle());
-            if(j instanceof Planta){
-                Planta p = (Planta)j;
-                System.out.println("Soy planta"+p.getEscudo());
-            }
-            if(j instanceof Zombie){
-                Zombie z = (Zombie)j;
-                System.out.println("Soy zombie"+z.getAtaque());
-            }
-            int res =(int)(Math.random()*10);
-            j.decVida(res);
-            System.out.println(res);
-            System.out.println(j.getDetalle());
-           
-        }
         
     }
 

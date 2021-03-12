@@ -45,15 +45,13 @@ public class Personaje{
         return nombre+"\t"+vida; 
     }
     public boolean equals(Object obj){
-        Personaje p = new Personaje(obj);
-        final Personaje other = (Personaje)obj;
-        if(vida == other.vida) {
-            return false;
+        boolean resultado = false;
+        if((obj != null) && (obj instanceof Personaje)){
+            Personaje u = (Personaje)obj;
+            if ((nombre == u.nombre) && (vida == u.vida)){
+                resultado = true;
+            }
         }
-        if(nombre == other.nombre){
-            return false;
-        }
-        return false;
-
+        return resultado;
     }
 }

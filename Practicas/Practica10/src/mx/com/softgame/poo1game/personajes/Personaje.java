@@ -9,7 +9,7 @@ public class Personaje{
     private static int id;
 
     public Personaje(int id){
-        this.id = get
+        this.id = getId()
     }
 
     public Personaje(String nombre, int vida){
@@ -64,6 +64,8 @@ public class Personaje{
     public final String getIdVida(){
         return id+" "+ vida;
     }
-    
+    public static String getIdVida(){
+        return id+" "+ vida;
+    }
 
 }

@@ -36,6 +36,11 @@ public class Planta extends Personaje{
     }
     public boolean equals(Object obj){
         return (super.equals(obj) && obj instanceof Planta && escudo == ((Planta)obj).escudo);
+
+    }
+
+    public static String getIdVida(){
+        return (getIdVida()+" "+ escudo);
     }
 
 }

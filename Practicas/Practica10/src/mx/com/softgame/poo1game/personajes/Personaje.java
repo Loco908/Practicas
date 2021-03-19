@@ -6,15 +6,12 @@ import static mx.com.softgame.poo1game.utlis.Utileria.*;
 public class Personaje{
     protected String nombre;
     private static int vida;
-    private static int id;
+    private static final int id;
 
-    public Personaje(int id){
-        this.id = getId();
-    }
-
-    public Personaje(String nombre, int vida){
+    public Personaje(String nombre, int vida, int id){
         this.nombre = nombre;
-        this.vida = vida;    
+        this.vida = vida;
+        id = getID();  
     }
     
     public void decVida(){
@@ -61,11 +58,9 @@ public class Personaje{
         return resultado;
     }
     
-    public final String getIdVida(){
+    public static final String getIdVida(){
         return id+" "+ vida;
     }
-    public static String getIdVida(){
-        return id+" "+ vida;
-    }
+    
 
 }

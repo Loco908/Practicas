@@ -39,8 +39,10 @@ public class Planta extends Personaje{
 
     }
 
-    public static String getIdVida(){
-        return (getIdVida()+" "+ escudo);
-    }
+    /** public static String getIdVida(){
+        //getIdVida() in Planta cannot override getIdVida() in Personaje
+        return (getIdVida()+" "+ escudo);*/
+    
+
 
 }

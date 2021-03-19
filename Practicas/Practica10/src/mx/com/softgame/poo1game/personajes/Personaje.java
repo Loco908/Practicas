@@ -1,8 +1,16 @@
 package mx.com.softgame.poo1game.personajes;
+import static mx.com.softgame.poo1game.utlis.Utileria.*;
+
+
 //Hora de inicio: 7:46 am
 public class Personaje{
     protected String nombre;
-    protected int vida;
+    private static int vida;
+    private static int id;
+
+    public Personaje(int id){
+        this.id = get
+    }
 
     public Personaje(String nombre, int vida){
         this.nombre = nombre;
@@ -52,4 +60,10 @@ public class Personaje{
         }
         return resultado;
     }
+    
+    public final String getIdVida(){
+        return id+" "+ vida;
+    }
+    
+
 }

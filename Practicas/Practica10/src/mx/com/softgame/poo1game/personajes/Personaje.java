@@ -1,19 +1,18 @@
 package mx.com.softgame.poo1game.personajes;
-import static mx.com.softgame.poo1game.utlis.Utileria.*;
+import mx.com.softgame.poo1game.utlis.Utileria;
 
 
 //Hora de inicio: 7:46 am
 public class Personaje{
     protected String nombre;
-    private static int vida;
-    private static final int id;
+    protected int vida;
+    private int id;//Quito el final porque me da el error de: cannot find symbol
 
-    public Personaje(String nombre, int vida, int id){
+    public Personaje(String nombre, int vida){
         this.nombre = nombre;
         this.vida = vida;
-        id = getID();  
+        id = Utileria.getID();  
     }
-    
     public void decVida(){
         decVida(1);
     }

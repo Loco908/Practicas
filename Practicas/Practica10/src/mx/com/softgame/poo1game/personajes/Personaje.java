@@ -1,5 +1,5 @@
 package mx.com.softgame.poo1game.personajes;
-
+//Hora de inicio: 7:46 am
 public class Personaje{
     protected String nombre;
     protected int vida;

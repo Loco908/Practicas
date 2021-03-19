@@ -6,7 +6,7 @@ import mx.com.softgame.poo1game.utlis.Utileria;
 public class Personaje{
     protected String nombre;
     protected int vida;
-    private int id;//Quito el final porque me da el error de: cannot find symbol
+    private final int id;
 
     public Personaje(String nombre, int vida){
         this.nombre = nombre;
@@ -41,7 +41,7 @@ public class Personaje{
         System.out.println("Hola Alumno de POO "+" "+ nombre);
     }
     public String toString(){
-        return nombre+" "+vida; 
+        return "["+id+"]"+ nombre + "("+vida+")"; 
     }
     public boolean equals( Object obj) {
         boolean resultado = false;
